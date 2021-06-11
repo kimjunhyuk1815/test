@@ -7,6 +7,7 @@
       yum:
         name: httpd
         state: present
+        
     - name: stop firewalld
       service:
         name: firewalld
@@ -17,4 +18,4 @@
       service:
         name: httpd
         state: started
-        enabled:true
+        enabled: true
