@@ -1,0 +1,9 @@
+---
+- name: play
+  hosts: all
+  become: true
+  tasks:
+    - name: httpd
+      yum:
+        name: httpd
+        state: present
